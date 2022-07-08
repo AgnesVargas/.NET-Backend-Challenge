@@ -1,12 +1,37 @@
-namespace TodoApi;
+using System;
 
+namespace TodoApi;
 public class WeatherForecast
 {
-    public DateTime Date { get; set; }
+    public long Id { get; set; }
+    public string? fullName { get; set; }
+    public string? email { get; set; }
+    public string? emailConfirmation { get; set; }
+    public string? cpf { get; set; }
+    public string? cellphone { get; set; }
+    public DateTime dayOfBirth { get; set; }
+    public bool emailSms { get; set; }
+    public bool whatsapp { get; set; }
+    public string? country { get; set; }
+    public string? city { get; set; }
 
-    public int TemperatureC { get; set; }
+    internal IEnumerable<WeatherForecast> GetAll()
+    {
+        throw new NotImplementedException();
+    }
 
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+    public string? postalCode { get; set; }
+    public string? address { get; set; }
+    public int number { get; set; }
 
-    public string? Summary { get; set; }
+    internal object Save(WeatherForecast? value)
+    {
+        throw new NotImplementedException();
+    }
 }
+
+
+
+
+
+
